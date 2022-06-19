@@ -9,16 +9,3 @@ const root = ReactDOM.createRoot(document.getElementById('root'));//daba khedami
 root.render(
     <App/>
 );//l parametre what khas tkon kamla f west men balise wehda
-
-
-
-/*
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
-
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(<App />);
-*/
