@@ -9,7 +9,7 @@ export default function SliderSec(){
     const max = dataSlider.length;
     const intervalBetweenSlides = () => autoplay && setActive(active === max - 1 ? 0 : active + 1);
     React.useEffect(() => {
-        const interval = setInterval( () => intervalBetweenSlides(), 5000);
+        const interval = setInterval( () => intervalBetweenSlides(), 2000);
         return () => clearInterval(interval);
     });
     const toggleAutoPlay = () => setAutoplay(!autoplay);
@@ -29,10 +29,10 @@ export default function SliderSec(){
         <div 
             className='each-slide' 
             key={ index } 
-            style={{ backgroundImage: item.eachSlide }}>
+            style={{ backgroundImage: item.eachSlide }}>    
         </div> 
     ));
-    const renderDots = () => dataSlider.map((silde, index) => ( // check index
+    const renderDots = () => dataSlider.map((silde, index) => ( 
         <li 
             className={ isActive(index) + ' dots' }   
             key={ index }>
